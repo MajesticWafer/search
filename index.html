@@ -99,7 +99,7 @@
                 if (matchingGames.length > 0) {
                     searchResultsContainer.innerHTML = `<span class="search-results-title">Search Results</span>` + matchingGames.map(game => `<div class="game-section" onclick="window.location.href='https://drive.google.com/file/${game.link}/view?usp=drivesdk'">${game}</div>`).join('');
                 } else {
-                    searchResultsContainer.innerHTML = `<span class="search-results-title">Search Results</span><div>No results found</div>`;
+                    searchResultsContainer.innerHTML = `<span class="search-results-title">Search Results</span><div style="margin-top: 9px; margin-left: 7px;">No results found</div>`;
                 }
                 searchResultsContainer.style.display = 'block';
                 searchResultsContainer.style.opacity = 1;
